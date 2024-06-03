@@ -1,0 +1,71 @@
+main {
+    background-color: var(--violet);
+}
+
+.playgame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 250px;
+}
+
+.playgame__img {
+    height: 500px;
+    width: auto;
+}
+
+.playgame__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 40%;
+}
+
+.playgame__form__h2 {
+    color: #fff;
+    font-family: 'Racing sans One';
+    font-size: 40px;
+}
+
+.playgame__form__input {
+    text-align: center;
+    padding: 13px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all .1s linear;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.playgame__form__input:focus {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, #f0a83b8e 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.playgame__form__submit {
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.demonstration {
+    background-image: url("../img/banner/kid.png");
+    background-repeat: no-repeat;
+    height: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.demonstration__p {
+    color: #fff;
+    font-size: 50px;
+}
