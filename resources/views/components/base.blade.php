@@ -15,23 +15,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Racing+Sans+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9de8273207.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header>
-        <div class="header_logo">
+        <a href="/" class="header_logo">
             <img src="{{asset("assets/img/logo/quizup.png")}}" alt="">
             <p>quizUp</p>
-        </div>
+        </a>
 
         <ul class="header_middle">
-            <li><a href="">Nouveauté</a></li>
+            <li><a href="/quiz/news">Nouveauté</a></li>
             <li><a href="">Divertissement</a></li>
-            <li><a href="">Avertissement</a></li>
+            <li><a href="">Apprentissage</a></li>
         </ul>
 
         <div class="header_connexion">
-            <a href=""><i class="fa-regular fa-circle-user"></i></a>
+            <a href="/auth/login"><i class="fa-regular fa-circle-user"></i></a>
         </div>
     </header>
     <main>

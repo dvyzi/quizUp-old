@@ -8,7 +8,11 @@ Route::get('/', function () {
 });
 
 Route::get('/quiz/news', function () {
-    return view('homepage');
+    return view('quiz/news');
+});
+
+Route::get('/auth/login', function () {
+    return view('auth/login');
 });
 
 Route::get('/dashboard', function () {

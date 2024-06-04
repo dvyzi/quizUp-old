@@ -11,8 +11,8 @@ main {
 }
 
 .playgame__img {
-    height: 500px;
-    width: auto;
+    height: auto;
+    width: 50%;
 }
 
 .playgame__form {
@@ -68,4 +68,25 @@ main {
 .demonstration__p {
     color: #fff;
     font-size: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+    .playgame {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .playgame {
+        flex-direction: column;
+    }
+
+    .playgame__img {
+        width: 60%;
+    }
+
+    .playgame__form {
+        width: 80%;
+    }
+    
 }
