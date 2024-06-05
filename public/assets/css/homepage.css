@@ -88,5 +88,36 @@ main {
     .playgame__form {
         width: 80%;
     }
-    
+}
+
+@media screen and (max-width: 700px) {
+    .playgame__img {
+        width: 100%;
+    }
+
+    .playgame__form {
+        width: 100%;
+    }
+
+    .playgame {
+        padding: 0 30px;
+    }
+
+    .playgame__form__h2 {
+        font-size: 30px;
+    }
+
+    .demonstration iframe {
+        width: 90%;
+        height: 415px;
+    }
+
+    .demonstration__p {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .demonstration {
+        height: 800px;
+    }
 }

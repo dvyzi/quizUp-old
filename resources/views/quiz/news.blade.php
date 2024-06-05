@@ -1,24 +1,31 @@
 <x-base css="quiz/news.css">
     <div class="manageGame">
-        
+        @for ($i = 0; $i < 4; $i++)
+            <div class="manageGame__container">
+                <h2 class="manageGame__container__h2">Mathématiques</h2>
+                <div class="spring-slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <a href="" class="swiper-slide">
+                                <img src="{{ asset('assets/img/banner/Quicklaunch-disney-quiz.png') }}" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="{{ asset('assets/img/banner/Quicklaunch-disney-quiz.png') }}" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="{{ asset('assets/img/banner/Quicklaunch-disney-quiz.png') }}" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="{{ asset('assets/img/banner/Quicklaunch-disney-quiz.png') }}" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="{{ asset('assets/img/banner/Quicklaunch-disney-quiz.png') }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endfor
     </div>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {});
-    </script>
+    <script type="module" crossorigin src="{{ asset('assets/js/swiper/carroussel.js') }}"></script>
 </x-base>
